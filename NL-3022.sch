@@ -1,0 +1,2397 @@
+EESchema Schematic File Version 4
+LIBS:NL-3022-cache
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title "Voltmeter ameter and frequency meter"
+Date "2018-12-04"
+Rev ""
+Comp "Noble Labs"
+Comment1 "Ex-251"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	12400 4700 12400 4275
+Wire Wire Line
+	13950 4725 13950 4275
+Wire Wire Line
+	16225 4275 16225 4650
+Wire Wire Line
+	16975 4275 16975 4625
+Wire Wire Line
+	12400 5000 12400 5175
+Wire Wire Line
+	13200 5025 13200 5175
+Wire Wire Line
+	13950 5025 13950 5175
+Wire Wire Line
+	14675 5000 14675 5175
+Wire Wire Line
+	2450 3025 2175 3025
+Wire Wire Line
+	2175 4025 3550 4025
+Wire Wire Line
+	3550 4025 3550 3475
+Wire Wire Line
+	3550 3475 3450 3475
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5C0A2C2E
+P 1250 12800
+F 0 "J2" H 1170 13217 50  0000 C CNN
+F 1 "Conn_01x05" H 1170 13126 50  0000 C CNN
+F 2 "land pattern:Pin_Header_Straight_1x05_Pitch2.54mm" H 1250 12800 50  0001 C CNN
+F 3 "~" H 1250 12800 50  0001 C CNN
+	1    1250 12800
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1600 12600 2    50   Input ~ 0
++5V
+Text GLabel 1600 13000 2    50   Input ~ 0
+DS
+Wire Wire Line
+	1450 12600 1600 12600
+Wire Wire Line
+	1450 12800 1600 12800
+Wire Wire Line
+	1450 12900 1600 12900
+Wire Wire Line
+	1450 13000 1600 13000
+Text GLabel 2175 2825 0    50   Input ~ 0
+SHCLK
+Wire Wire Line
+	2450 2825 2175 2825
+Text GLabel 2175 3025 0    50   Input ~ 0
+STCLK
+Wire Wire Line
+	2175 4975 2450 4975
+Wire Wire Line
+	2175 5175 2450 5175
+$Comp
+L power:GND #PWR0101
+U 1 1 5C0A2C40
+P 2325 3575
+F 0 "#PWR0101" H 2325 3325 50  0001 C CNN
+F 1 "GND" H 2330 3402 50  0000 C CNN
+F 2 "" H 2325 3575 50  0001 C CNN
+F 3 "" H 2325 3575 50  0001 C CNN
+	1    2325 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3325 2325 3325
+Wire Wire Line
+	2450 5475 2325 5475
+Wire Wire Line
+	2325 5475 2325 5625
+Wire Wire Line
+	2325 5625 2450 5625
+$Comp
+L power:GND #PWR0102
+U 1 1 5C0A2C4A
+P 2325 5750
+F 0 "#PWR0102" H 2325 5500 50  0001 C CNN
+F 1 "GND" H 2330 5577 50  0000 C CNN
+F 2 "" H 2325 5750 50  0001 C CNN
+F 3 "" H 2325 5750 50  0001 C CNN
+	1    2325 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 5750 2325 5625
+Connection ~ 2325 5625
+Text GLabel 2175 2925 0    50   Input ~ 0
++5V
+Wire Wire Line
+	2450 2925 2175 2925
+Text GLabel 2175 5075 0    50   Input ~ 0
++5V
+Wire Wire Line
+	2450 5075 2175 5075
+Text GLabel 2175 2575 0    50   Input ~ 0
+DS
+Wire Wire Line
+	2175 2575 2450 2575
+Text GLabel 4250 2325 2    50   Input ~ 0
+a
+Text GLabel 4250 2500 2    50   Input ~ 0
+b
+Text GLabel 4250 2675 2    50   Input ~ 0
+c
+Text GLabel 4250 2850 2    50   Input ~ 0
+d
+Text GLabel 4250 3025 2    50   Input ~ 0
+e
+Text GLabel 4250 3200 2    50   Input ~ 0
+f
+Text GLabel 4250 3375 2    50   Input ~ 0
+g
+Text GLabel 4250 3550 2    50   Input ~ 0
+dp
+Text GLabel 12750 3750 1    50   Input ~ 0
+CC1
+Text GLabel 13550 3750 1    50   Input ~ 0
+CC2
+Text GLabel 14275 3750 1    50   Input ~ 0
+CC3
+Text GLabel 15000 3750 1    50   Input ~ 0
+CC4
+Text GLabel 15750 3750 1    50   Input ~ 0
+CC5
+Text GLabel 16550 3750 1    50   Input ~ 0
+CC6
+Text GLabel 17350 3750 1    50   Input ~ 0
+CC7
+Text GLabel 18075 3750 1    50   Input ~ 0
+CC8
+Wire Wire Line
+	12750 3750 12750 4075
+Wire Wire Line
+	13550 3750 13550 4075
+Wire Wire Line
+	14275 3750 14275 4075
+Wire Wire Line
+	15000 3750 15000 4075
+Wire Wire Line
+	15750 3750 15750 4075
+Wire Wire Line
+	16550 3750 16550 4075
+Wire Wire Line
+	17350 3750 17350 4075
+Wire Wire Line
+	18075 3750 18075 4075
+Wire Wire Line
+	17750 4650 17750 4275
+Wire Wire Line
+	13200 4275 13200 4725
+Text GLabel 12400 5175 3    50   Input ~ 0
+SG1
+Text GLabel 13200 5175 3    50   Input ~ 0
+SG2
+Text GLabel 13950 5175 3    50   Input ~ 0
+SG3
+Text GLabel 14675 5175 3    50   Input ~ 0
+SG4
+Text GLabel 15425 5175 3    50   Input ~ 0
+SG5
+Text GLabel 16225 5175 3    50   Input ~ 0
+SG6
+Text GLabel 16975 5175 3    50   Input ~ 0
+SG7
+Text GLabel 17750 5175 3    50   Input ~ 0
+SG8
+Wire Wire Line
+	16225 4950 16225 5175
+Wire Wire Line
+	16975 4925 16975 5175
+Wire Wire Line
+	17750 4950 17750 5175
+Text GLabel 3600 4725 2    50   Input ~ 0
+SG1
+Text GLabel 3600 4825 2    50   Input ~ 0
+SG2
+Text GLabel 3600 4925 2    50   Input ~ 0
+SG3
+Text GLabel 3600 5025 2    50   Input ~ 0
+SG4
+Text GLabel 3600 5125 2    50   Input ~ 0
+SG5
+Text GLabel 3600 5225 2    50   Input ~ 0
+SG6
+Text GLabel 3600 5325 2    50   Input ~ 0
+SG7
+Text GLabel 3600 5425 2    50   Input ~ 0
+SG8
+Wire Wire Line
+	3450 4725 3600 4725
+Wire Wire Line
+	3450 4825 3600 4825
+Wire Wire Line
+	3450 4925 3600 4925
+Wire Wire Line
+	3450 5025 3600 5025
+Wire Wire Line
+	3450 5125 3600 5125
+Wire Wire Line
+	3450 5225 3600 5225
+Wire Wire Line
+	3450 5325 3600 5325
+Wire Wire Line
+	3450 5425 3600 5425
+Text GLabel 2950 4350 1    50   Input ~ 0
++5V
+$Comp
+L power:GND #PWR0103
+U 1 1 5C0A2C8E
+P 1975 12700
+F 0 "#PWR0103" H 1975 12450 50  0001 C CNN
+F 1 "GND" H 1980 12527 50  0000 C CNN
+F 2 "" H 1975 12700 50  0001 C CNN
+F 3 "" H 1975 12700 50  0001 C CNN
+	1    1975 12700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 12700 1975 12700
+$Comp
+L Device:R R3
+U 1 1 5C0A2C95
+P 3950 2675
+F 0 "R3" V 3875 2675 50  0000 C CNN
+F 1 "220E" V 3950 2675 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3880 2675 50  0001 C CNN
+F 3 "~" H 3950 2675 50  0001 C CNN
+	1    3950 2675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C0A2C9C
+P 3950 2850
+F 0 "R4" V 3875 2850 50  0000 C CNN
+F 1 "220E" V 3950 2850 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3880 2850 50  0001 C CNN
+F 3 "~" H 3950 2850 50  0001 C CNN
+	1    3950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C0A2CA3
+P 3950 3025
+F 0 "R5" V 3875 3025 50  0000 C CNN
+F 1 "220E" V 3950 3025 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3880 3025 50  0001 C CNN
+F 3 "~" H 3950 3025 50  0001 C CNN
+	1    3950 3025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5C0A2CAA
+P 3950 3200
+F 0 "R6" V 3875 3200 50  0000 C CNN
+F 1 "220E" V 3950 3200 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3880 3200 50  0001 C CNN
+F 3 "~" H 3950 3200 50  0001 C CNN
+	1    3950 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5C0A2CB1
+P 3950 3375
+F 0 "R7" V 3875 3375 50  0000 C CNN
+F 1 "220E" V 3950 3375 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3880 3375 50  0001 C CNN
+F 3 "~" H 3950 3375 50  0001 C CNN
+	1    3950 3375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5C0A2CB8
+P 3950 3550
+F 0 "R8" V 3875 3550 50  0000 C CNN
+F 1 "220E" V 3950 3550 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3880 3550 50  0001 C CNN
+F 3 "~" H 3950 3550 50  0001 C CNN
+	1    3950 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C0A2CBF
+P 3950 2500
+F 0 "R2" V 3875 2500 50  0000 C CNN
+F 1 "220E" V 3950 2500 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3880 2500 50  0001 C CNN
+F 3 "~" H 3950 2500 50  0001 C CNN
+	1    3950 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C0A2CC6
+P 3950 2325
+F 0 "R1" V 3875 2325 50  0000 C CNN
+F 1 "220E" V 3950 2325 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3880 2325 50  0001 C CNN
+F 3 "~" H 3950 2325 50  0001 C CNN
+	1    3950 2325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 2325 4250 2325
+Wire Wire Line
+	4100 2500 4250 2500
+Wire Wire Line
+	4100 2675 4250 2675
+Wire Wire Line
+	4100 2850 4250 2850
+Wire Wire Line
+	4100 3025 4250 3025
+Wire Wire Line
+	4100 3200 4250 3200
+Wire Wire Line
+	4100 3375 4250 3375
+Wire Wire Line
+	4100 3550 4250 3550
+Wire Wire Line
+	3600 2575 3600 2325
+Wire Wire Line
+	3600 2325 3800 2325
+Wire Wire Line
+	3450 2575 3600 2575
+Wire Wire Line
+	3650 2675 3650 2500
+Wire Wire Line
+	3650 2500 3800 2500
+Wire Wire Line
+	3450 2675 3650 2675
+Wire Wire Line
+	3700 2775 3700 2675
+Wire Wire Line
+	3700 2675 3800 2675
+Wire Wire Line
+	3450 2775 3700 2775
+Wire Wire Line
+	3725 2875 3725 2850
+Wire Wire Line
+	3725 2850 3800 2850
+Wire Wire Line
+	3450 2875 3725 2875
+Wire Wire Line
+	3725 2975 3725 3025
+Wire Wire Line
+	3725 3025 3800 3025
+Wire Wire Line
+	3450 2975 3725 2975
+Wire Wire Line
+	3750 3200 3800 3200
+Wire Wire Line
+	3450 3075 3750 3075
+Wire Wire Line
+	3625 3275 3625 3550
+Wire Wire Line
+	3625 3550 3800 3550
+Wire Wire Line
+	3450 3275 3625 3275
+Wire Wire Line
+	3750 3075 3750 3200
+Wire Wire Line
+	3700 3175 3700 3375
+Wire Wire Line
+	3700 3375 3800 3375
+Wire Wire Line
+	3450 3175 3700 3175
+Wire Wire Line
+	2325 3325 2325 3475
+Wire Wire Line
+	2450 3475 2325 3475
+Connection ~ 2325 3475
+Wire Wire Line
+	2325 3475 2325 3575
+Wire Wire Line
+	2950 4350 2950 4425
+Wire Wire Line
+	2175 4725 2450 4725
+Wire Wire Line
+	2950 2150 2950 2275
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5C0A2CF4
+P 12650 4275
+F 0 "Q1" H 12841 4321 50  0000 L CNN
+F 1 "2N3904" H 12841 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 12850 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 12650 4275 50  0001 L CNN
+	1    12650 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 5C0A2CFB
+P 13450 4275
+F 0 "Q2" H 13641 4321 50  0000 L CNN
+F 1 "2N3904" H 13641 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 13650 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 13450 4275 50  0001 L CNN
+	1    13450 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q3
+U 1 1 5C0A2D02
+P 14175 4275
+F 0 "Q3" H 14366 4321 50  0000 L CNN
+F 1 "2N3904" H 14366 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 14375 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14175 4275 50  0001 L CNN
+	1    14175 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q4
+U 1 1 5C0A2D09
+P 14900 4275
+F 0 "Q4" H 15091 4321 50  0000 L CNN
+F 1 "2N3904" H 15091 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 15100 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14900 4275 50  0001 L CNN
+	1    14900 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q5
+U 1 1 5C0A2D10
+P 15650 4275
+F 0 "Q5" H 15841 4321 50  0000 L CNN
+F 1 "2N3904" H 15841 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 15850 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 15650 4275 50  0001 L CNN
+	1    15650 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q7
+U 1 1 5C0A2D17
+P 17250 4275
+F 0 "Q7" H 17441 4321 50  0000 L CNN
+F 1 "2N3904" H 17441 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 17450 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 17250 4275 50  0001 L CNN
+	1    17250 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q8
+U 1 1 5C0A2D1E
+P 17975 4275
+F 0 "Q8" H 18166 4321 50  0000 L CNN
+F 1 "2N3904" H 18166 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 18175 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 17975 4275 50  0001 L CNN
+	1    17975 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5C0A2D25
+P 12400 4850
+F 0 "R15" H 12470 4896 50  0000 L CNN
+F 1 "1K" H 12470 4805 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 12330 4850 50  0001 C CNN
+F 3 "~" H 12400 4850 50  0001 C CNN
+	1    12400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14675 4275 14675 4700
+$Comp
+L power:GND #PWR0104
+U 1 1 5C0A2D2D
+P 21600 4625
+F 0 "#PWR0104" H 21600 4375 50  0001 C CNN
+F 1 "GND" H 21605 4452 50  0000 C CNN
+F 2 "" H 21600 4625 50  0001 C CNN
+F 3 "" H 21600 4625 50  0001 C CNN
+	1    21600 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18500 4275 18525 4275
+Wire Wire Line
+	20025 4725 20025 4275
+Wire Wire Line
+	18500 5000 18500 5175
+Wire Wire Line
+	19300 5025 19300 5175
+Wire Wire Line
+	20025 5025 20025 5175
+Wire Wire Line
+	20750 5000 20750 5175
+Text GLabel 18825 3750 1    50   Input ~ 0
+CC9
+Text GLabel 19625 3750 1    50   Input ~ 0
+CC10
+Text GLabel 20350 3750 1    50   Input ~ 0
+CC11
+Text GLabel 21075 3750 1    50   Input ~ 0
+CC12
+Wire Wire Line
+	18825 3750 18825 4075
+Wire Wire Line
+	19625 3750 19625 4075
+Wire Wire Line
+	20350 3750 20350 4075
+Wire Wire Line
+	21075 3750 21075 4075
+Wire Wire Line
+	19300 4275 19300 4725
+Text GLabel 18500 5175 3    50   Input ~ 0
+SG9
+Text GLabel 19300 5175 3    50   Input ~ 0
+SG10
+Text GLabel 20025 5175 3    50   Input ~ 0
+SG11
+Text GLabel 20750 5175 3    50   Input ~ 0
+SG12
+$Comp
+L Transistor_BJT:2N3904 Q9
+U 1 1 5C0A2D46
+P 18725 4275
+F 0 "Q9" H 18916 4321 50  0000 L CNN
+F 1 "2N3904" H 18916 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 18925 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 18725 4275 50  0001 L CNN
+	1    18725 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q10
+U 1 1 5C0A2D4D
+P 19525 4275
+F 0 "Q10" H 19716 4321 50  0000 L CNN
+F 1 "2N3904" H 19716 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 19725 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 19525 4275 50  0001 L CNN
+	1    19525 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q11
+U 1 1 5C0A2D54
+P 20250 4275
+F 0 "Q11" H 20441 4321 50  0000 L CNN
+F 1 "2N3904" H 20441 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 20450 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 20250 4275 50  0001 L CNN
+	1    20250 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q12
+U 1 1 5C0A2D5B
+P 20975 4275
+F 0 "Q12" H 21166 4321 50  0000 L CNN
+F 1 "2N3904" H 21166 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 21175 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 20975 4275 50  0001 L CNN
+	1    20975 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20750 4275 20750 4700
+$Comp
+L Mylibrary:SN74HC595N U1
+U 1 1 5C0A2D63
+P 2950 2975
+F 0 "U1" H 2950 2303 50  0000 C CNN
+F 1 "SN74HC595N" H 2950 2212 50  0000 C CNN
+F 2 "land pattern:SOT109_4X10mm_Pitch1.27mm" H 2950 2975 50  0001 C CNN
+F 3 "" H 2950 2975 50  0001 C CNN
+	1    2950 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mylibrary:SN74HC595N U2
+U 1 1 5C0A2D6A
+P 2950 5125
+F 0 "U2" H 2950 4453 50  0000 C CNN
+F 1 "SN74HC595N" H 2950 4362 50  0000 C CNN
+F 2 "land pattern:SOT109_4X10mm_Pitch1.27mm" H 2950 5125 50  0001 C CNN
+F 3 "" H 2950 5125 50  0001 C CNN
+	1    2950 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 4025 2175 4725
+NoConn ~ 3475 7925
+Wire Wire Line
+	2200 7275 2475 7275
+Wire Wire Line
+	2200 7475 2475 7475
+Wire Wire Line
+	2475 7775 2350 7775
+Wire Wire Line
+	2350 7775 2350 7925
+Wire Wire Line
+	2350 7925 2475 7925
+$Comp
+L power:GND #PWR0105
+U 1 1 5C0A2D78
+P 2350 8050
+F 0 "#PWR0105" H 2350 7800 50  0001 C CNN
+F 1 "GND" H 2355 7877 50  0000 C CNN
+F 2 "" H 2350 8050 50  0001 C CNN
+F 3 "" H 2350 8050 50  0001 C CNN
+	1    2350 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 8050 2350 7925
+Connection ~ 2350 7925
+Text GLabel 2200 7375 0    50   Input ~ 0
++5V
+Wire Wire Line
+	2475 7375 2200 7375
+Text GLabel 3625 7025 2    50   Input ~ 0
+SG9
+Text GLabel 3625 7125 2    50   Input ~ 0
+SG10
+Text GLabel 3625 7225 2    50   Input ~ 0
+SG11
+Text GLabel 3625 7325 2    50   Input ~ 0
+SG12
+Wire Wire Line
+	3475 7025 3625 7025
+Wire Wire Line
+	3475 7125 3625 7125
+Wire Wire Line
+	3475 7225 3625 7225
+Wire Wire Line
+	3475 7325 3625 7325
+Text GLabel 2975 6650 1    50   Input ~ 0
++5V
+Wire Wire Line
+	2975 6650 2975 6725
+Wire Wire Line
+	2200 7025 2475 7025
+$Comp
+L Mylibrary:SN74HC595N U3
+U 1 1 5C0A2D8D
+P 2975 7425
+F 0 "U3" H 2975 6753 50  0000 C CNN
+F 1 "SN74HC595N" H 2975 6662 50  0000 C CNN
+F 2 "land pattern:SOT109_4X10mm_Pitch1.27mm" H 2975 7425 50  0001 C CNN
+F 3 "" H 2975 7425 50  0001 C CNN
+	1    2975 7425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6325 2200 7025
+Wire Wire Line
+	2200 6325 3650 6325
+Wire Wire Line
+	3650 6325 3650 5625
+Wire Wire Line
+	3650 5625 3450 5625
+Text GLabel 2175 4975 0    50   Input ~ 0
+SHCLK
+Text GLabel 2175 5175 0    50   Input ~ 0
+STCLK
+Text GLabel 2200 7275 0    50   Input ~ 0
+SHCLK
+Text GLabel 2200 7475 0    50   Input ~ 0
+STCLK
+Text GLabel 1600 12900 2    50   Input ~ 0
+SHCLK
+Text GLabel 1600 12800 2    50   Input ~ 0
+STCLK
+Text GLabel 2950 2150 1    50   Input ~ 0
++5V
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5C0A2D9F
+P 1250 11125
+F 0 "J1" H 1170 11542 50  0000 C CNN
+F 1 "Conn_01x06" H 1170 11451 50  0000 C CNN
+F 2 "land pattern:Pin_Header_Straight_1x06_Pitch2.54mm" H 1250 11125 50  0001 C CNN
+F 3 "~" H 1250 11125 50  0001 C CNN
+	1    1250 11125
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 10925 1600 10925
+Wire Wire Line
+	1600 10925 1600 10650
+Wire Wire Line
+	1600 10650 1950 10650
+Wire Wire Line
+	1950 10650 1950 10800
+Wire Wire Line
+	1450 11025 1750 11025
+Wire Wire Line
+	1450 11125 1675 11125
+Wire Wire Line
+	1450 11225 1675 11225
+Wire Wire Line
+	1450 11325 1675 11325
+Wire Wire Line
+	1450 11425 1675 11425
+$Comp
+L power:GND #PWR0106
+U 1 1 5C0A2DAF
+P 1950 10800
+F 0 "#PWR0106" H 1950 10550 50  0001 C CNN
+F 1 "GND" H 1955 10627 50  0000 C CNN
+F 2 "" H 1950 10800 50  0001 C CNN
+F 3 "" H 1950 10800 50  0001 C CNN
+	1    1950 10800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1675 11125 2    50   Input ~ 0
+RST
+Text GLabel 1675 11225 2    50   Input ~ 0
+SCK
+Text GLabel 1675 11325 2    50   Input ~ 0
+MISO
+Text GLabel 1675 11425 2    50   Input ~ 0
+MOSI
+Text GLabel 4950 13775 2    50   Input ~ 0
+RST
+Text GLabel 4975 12825 2    50   Input ~ 0
+SCK
+Text GLabel 4975 12725 2    50   Input ~ 0
+MISO
+Text GLabel 4975 12625 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	4975 12825 4775 12825
+Wire Wire Line
+	4975 12625 4775 12625
+Wire Wire Line
+	4975 12725 4775 12725
+Wire Wire Line
+	4950 13775 4775 13775
+$Comp
+L Device:C C1
+U 1 1 5C0A2DC1
+P 2700 13275
+F 0 "C1" H 2815 13321 50  0000 L CNN
+F 1 "0.1u" H 2815 13230 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 2738 13125 50  0001 C CNN
+F 3 "~" H 2700 13275 50  0001 C CNN
+	1    2700 13275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 13125 2700 12925
+Wire Wire Line
+	2700 12925 2875 12925
+Wire Wire Line
+	2875 14625 2750 14625
+Wire Wire Line
+	2750 14525 2875 14525
+Wire Wire Line
+	2700 13425 2700 13600
+$Comp
+L power:GND #PWR0107
+U 1 1 5C0A2DCD
+P 2700 13600
+F 0 "#PWR0107" H 2700 13350 50  0001 C CNN
+F 1 "GND" H 2705 13427 50  0000 C CNN
+F 2 "" H 2700 13600 50  0001 C CNN
+F 3 "" H 2700 13600 50  0001 C CNN
+	1    2700 13600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5C0A2DD3
+P 2700 14725
+F 0 "#PWR0108" H 2700 14475 50  0001 C CNN
+F 1 "GND" H 2705 14552 50  0000 C CNN
+F 2 "" H 2700 14725 50  0001 C CNN
+F 3 "" H 2700 14725 50  0001 C CNN
+	1    2700 14725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 12325 2700 12325
+Wire Wire Line
+	2700 12325 2700 12425
+Wire Wire Line
+	2875 12625 2700 12625
+Wire Wire Line
+	2700 12325 2700 11825
+Connection ~ 2700 12325
+$Comp
+L Device:D D4
+U 1 1 5C0A2DDE
+P 14300 8520
+F 0 "D4" H 14300 8304 50  0000 C CNN
+F 1 "1N4004" H 14300 8395 50  0000 C CNN
+F 2 "land pattern:Diode_10.16MM" H 14300 8520 50  0001 C CNN
+F 3 "~" H 14300 8520 50  0001 C CNN
+	1    14300 8520
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5C0A2DE5
+P 14625 8845
+F 0 "R21" H 14695 8891 50  0000 L CNN
+F 1 "520K 1%" H 14695 8800 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 14555 8845 50  0001 C CNN
+F 3 "~" H 14625 8845 50  0001 C CNN
+	1    14625 8845
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5C0A2DEC
+P 14625 9420
+F 0 "R22" H 14695 9466 50  0000 L CNN
+F 1 "470E 1%" H 14695 9375 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 14555 9420 50  0001 C CNN
+F 3 "~" H 14625 9420 50  0001 C CNN
+	1    14625 9420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14625 9270 14625 9145
+Wire Wire Line
+	14625 8695 14625 8520
+Wire Wire Line
+	14625 8520 14450 8520
+$Comp
+L Device:R R25
+U 1 1 5C0A2DF6
+P 15200 9145
+F 0 "R25" V 14993 9145 50  0000 C CNN
+F 1 "100E" V 15084 9145 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 15130 9145 50  0001 C CNN
+F 3 "~" H 15200 9145 50  0001 C CNN
+	1    15200 9145
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15050 9145 14625 9145
+Connection ~ 14625 9145
+Wire Wire Line
+	14625 9145 14625 8995
+$Comp
+L Device:D_Zener D5
+U 1 1 5C0A2E00
+P 15750 9420
+F 0 "D5" V 15704 9499 50  0000 L CNN
+F 1 "3.6V" V 15795 9499 50  0000 L CNN
+F 2 "land pattern:Diode_10.16MM" H 15750 9420 50  0001 C CNN
+F 3 "~" H 15750 9420 50  0001 C CNN
+	1    15750 9420
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15750 9270 15750 9145
+Wire Wire Line
+	15750 9570 15750 9705
+$Comp
+L power:GND #PWR0109
+U 1 1 5C0A2E0B
+P 15750 9760
+F 0 "#PWR0109" H 15750 9510 50  0001 C CNN
+F 1 "GND" H 15755 9587 50  0000 C CNN
+F 2 "" H 15750 9760 50  0001 C CNN
+F 3 "" H 15750 9760 50  0001 C CNN
+	1    15750 9760
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5C0A2E11
+P 14625 9745
+F 0 "#PWR0110" H 14625 9495 50  0001 C CNN
+F 1 "GND" H 14630 9572 50  0000 C CNN
+F 2 "" H 14625 9745 50  0001 C CNN
+F 3 "" H 14625 9745 50  0001 C CNN
+	1    14625 9745
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15750 9145 16075 9145
+Connection ~ 15750 9145
+Text GLabel 16375 12325 2    50   Input ~ 0
+ADC0
+Text GLabel 14050 8520 0    50   Input ~ 0
+LINE
+Text GLabel 2700 11375 1    50   Input ~ 0
++5V
+Text GLabel 4975 13375 2    50   Input ~ 0
+ADC0
+Wire Wire Line
+	4975 13175 4775 13175
+$Comp
+L Device:R R9
+U 1 1 5C0A2E1E
+P 4025 10925
+F 0 "R9" V 3818 10925 50  0000 C CNN
+F 1 "220E" V 3909 10925 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3955 10925 50  0001 C CNN
+F 3 "~" H 4025 10925 50  0001 C CNN
+	1    4025 10925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5C0A2E25
+P 4550 10925
+F 0 "D1" H 4542 10670 50  0000 C CNN
+F 1 "LED" H 4542 10761 50  0000 C CNN
+F 2 "land pattern:LED_3.0mm" H 4550 10925 50  0001 C CNN
+F 3 "~" H 4550 10925 50  0001 C CNN
+	1    4550 10925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 10925 4175 10925
+Wire Wire Line
+	3875 10925 3725 10925
+Wire Wire Line
+	3725 10925 3725 10750
+Wire Wire Line
+	4700 10925 4875 10925
+$Comp
+L power:GND #PWR0111
+U 1 1 5C0A2E30
+P 5150 11125
+F 0 "#PWR0111" H 5150 10875 50  0001 C CNN
+F 1 "GND" H 5155 10952 50  0000 C CNN
+F 2 "" H 5150 11125 50  0001 C CNN
+F 3 "" H 5150 11125 50  0001 C CNN
+	1    5150 11125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5C0A2E36
+P 4025 11275
+F 0 "R10" V 3818 11275 50  0000 C CNN
+F 1 "10k" V 3909 11275 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 3955 11275 50  0001 C CNN
+F 3 "~" H 4025 11275 50  0001 C CNN
+	1    4025 11275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4675 11275 4875 11275
+Wire Wire Line
+	4875 10925 4875 11100
+Wire Wire Line
+	5150 11125 5150 11100
+Wire Wire Line
+	5150 11100 4875 11100
+Connection ~ 4875 11100
+Wire Wire Line
+	4875 11100 4875 11275
+Wire Wire Line
+	4375 11275 4275 11275
+Wire Wire Line
+	3875 11275 3725 11275
+Wire Wire Line
+	3725 11275 3725 10925
+Connection ~ 3725 10925
+Wire Wire Line
+	4275 11275 4275 11500
+Connection ~ 4275 11275
+Wire Wire Line
+	4275 11275 4175 11275
+Text GLabel 4275 11500 3    50   Input ~ 0
+RST
+$Comp
+L Device:C C2
+U 1 1 5C0A2E52
+P 3125 11825
+F 0 "C2" H 3240 11871 50  0000 L CNN
+F 1 "0.1u" H 3240 11780 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 3163 11675 50  0001 C CNN
+F 3 "~" H 3125 11825 50  0001 C CNN
+	1    3125 11825
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5C0A2E59
+P 3425 11900
+F 0 "#PWR0112" H 3425 11650 50  0001 C CNN
+F 1 "GND" H 3430 11727 50  0000 C CNN
+F 2 "" H 3425 11900 50  0001 C CNN
+F 3 "" H 3425 11900 50  0001 C CNN
+	1    3425 11900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 11825 2700 11825
+Connection ~ 2700 11825
+Wire Wire Line
+	2700 11825 2700 11375
+Wire Wire Line
+	3275 11825 3425 11825
+Wire Wire Line
+	3425 11825 3425 11900
+Wire Wire Line
+	21600 4550 21600 4625
+NoConn ~ 3475 7425
+NoConn ~ 3475 7525
+NoConn ~ 3475 7625
+NoConn ~ 3475 7725
+Text GLabel 1750 10950 1    50   Input ~ 0
++5V
+Wire Wire Line
+	1750 10950 1750 11025
+Text GLabel 4975 13475 2    50   Input ~ 0
+ADC1
+Wire Wire Line
+	4975 13275 4775 13275
+$Comp
+L Device:R R17
+U 1 1 5C0A2E6D
+P 13200 4875
+F 0 "R17" H 13270 4921 50  0000 L CNN
+F 1 "1K" H 13270 4830 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 13130 4875 50  0001 C CNN
+F 3 "~" H 13200 4875 50  0001 C CNN
+	1    13200 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5C0A2E74
+P 13950 4875
+F 0 "R19" H 14020 4921 50  0000 L CNN
+F 1 "1K" H 14020 4830 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 13880 4875 50  0001 C CNN
+F 3 "~" H 13950 4875 50  0001 C CNN
+	1    13950 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5C0A2E7B
+P 14675 4850
+F 0 "R23" H 14745 4896 50  0000 L CNN
+F 1 "1K" H 14745 4805 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 14605 4850 50  0001 C CNN
+F 3 "~" H 14675 4850 50  0001 C CNN
+	1    14675 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5C0A2E82
+P 15425 4850
+F 0 "R26" H 15495 4896 50  0000 L CNN
+F 1 "1K" H 15495 4805 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 15355 4850 50  0001 C CNN
+F 3 "~" H 15425 4850 50  0001 C CNN
+	1    15425 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15425 5000 15425 5175
+Wire Wire Line
+	15425 4275 15425 4700
+$Comp
+L Device:R R27
+U 1 1 5C0A2E8B
+P 16225 4800
+F 0 "R27" H 16295 4846 50  0000 L CNN
+F 1 "1K" H 16295 4755 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 16155 4800 50  0001 C CNN
+F 3 "~" H 16225 4800 50  0001 C CNN
+	1    16225 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5C0A2E92
+P 16975 4775
+F 0 "R28" H 17045 4821 50  0000 L CNN
+F 1 "1K" H 17045 4730 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 16905 4775 50  0001 C CNN
+F 3 "~" H 16975 4775 50  0001 C CNN
+	1    16975 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 5C0A2E99
+P 17750 4800
+F 0 "R29" H 17820 4846 50  0000 L CNN
+F 1 "1K" H 17820 4755 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 17680 4800 50  0001 C CNN
+F 3 "~" H 17750 4800 50  0001 C CNN
+	1    17750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 5C0A2EA0
+P 18500 4850
+F 0 "R30" H 18570 4896 50  0000 L CNN
+F 1 "1K" H 18570 4805 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 18430 4850 50  0001 C CNN
+F 3 "~" H 18500 4850 50  0001 C CNN
+	1    18500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 5C0A2EA7
+P 19300 4875
+F 0 "R31" H 19370 4921 50  0000 L CNN
+F 1 "1K" H 19370 4830 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 19230 4875 50  0001 C CNN
+F 3 "~" H 19300 4875 50  0001 C CNN
+	1    19300 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 5C0A2EAE
+P 20025 4875
+F 0 "R32" H 20095 4921 50  0000 L CNN
+F 1 "1K" H 20095 4830 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 19955 4875 50  0001 C CNN
+F 3 "~" H 20025 4875 50  0001 C CNN
+	1    20025 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5C0A2EB5
+P 20750 4850
+F 0 "R33" H 20820 4896 50  0000 L CNN
+F 1 "1K" H 20820 4805 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 20680 4850 50  0001 C CNN
+F 3 "~" H 20750 4850 50  0001 C CNN
+	1    20750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5C0A2EBC
+P 20260 9310
+F 0 "J3" H 20180 9527 50  0000 C CNN
+F 1 "Conn_01x02" H 20180 9436 50  0000 C CNN
+F 2 "land pattern:Connector_1mm_5.08mm" H 20260 9310 50  0001 C CNN
+F 3 "~" H 20260 9310 50  0001 C CNN
+	1    20260 9310
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	20460 9310 20560 9310
+Text GLabel 20560 9310 2    50   Input ~ 0
+LINE
+Text GLabel 20585 9835 2    50   Input ~ 0
+CIN
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5C0A2EC9
+P 20260 9835
+F 0 "J4" H 20180 10052 50  0000 C CNN
+F 1 "Conn_01x02_CT" H 20180 9961 50  0000 C CNN
+F 2 "land pattern:Pin_Header_Straight_1x02_Pitch2.54mm" H 20260 9835 50  0001 C CNN
+F 3 "~" H 20260 9835 50  0001 C CNN
+	1    20260 9835
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	20585 9835 20460 9835
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5C0A2ED2
+P 20260 10535
+F 0 "J5" H 20180 10210 50  0000 C CNN
+F 1 "Conn_01x02" H 20180 10301 50  0000 C CNN
+F 2 "land pattern:Pin_Header_Straight_1x02_Pitch2.54mm" H 20260 10535 50  0001 C CNN
+F 3 "~" H 20260 10535 50  0001 C CNN
+	1    20260 10535
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	20585 10435 20460 10435
+Wire Notes Line
+	20010 8885 20010 10835
+Wire Notes Line
+	20010 10835 21335 10835
+Wire Notes Line
+	21335 10835 21335 8885
+Wire Notes Line
+	21335 8885 20010 8885
+Text Notes 20285 10960 0    50   ~ 0
+EXTERNAL CONNECTOR\n
+Text Notes 20835 10460 0    50   ~ 0
+DC +5 Volt \n
+Text Notes 20910 9910 0    50   ~ 0
+AC 5 AMP\n
+Text GLabel 19610 10310 1    50   Input ~ 0
++5V
+$Comp
+L power:GND #PWR0113
+U 1 1 5C0A2EE2
+P 19610 10835
+F 0 "#PWR0113" H 19610 10585 50  0001 C CNN
+F 1 "GND" H 19615 10662 50  0000 C CNN
+F 2 "" H 19610 10835 50  0001 C CNN
+F 3 "" H 19610 10835 50  0001 C CNN
+	1    19610 10835
+	1    0    0    -1  
+$EndComp
+Text GLabel 3725 10750 1    50   Input ~ 0
++5V
+Text GLabel 20585 10435 2    50   Input ~ 0
++5V
+$Comp
+L power:GND #PWR0114
+U 1 1 5C0A2EEA
+P 20660 10560
+F 0 "#PWR0114" H 20660 10310 50  0001 C CNN
+F 1 "GND" H 20665 10387 50  0000 C CNN
+F 2 "" H 20660 10560 50  0001 C CNN
+F 3 "" H 20660 10560 50  0001 C CNN
+	1    20660 10560
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20660 10560 20660 10535
+Wire Wire Line
+	20460 10535 20660 10535
+Text Notes 14775 13395 0    50   ~ 0
+Current Measurement\n
+Text Notes 15250 10570 0    50   ~ 0
+Voltage Measurement\n
+Text GLabel 4975 12525 2    50   Input ~ 0
+DS
+Text GLabel 4975 12425 2    50   Input ~ 0
+SHCLK
+Text GLabel 4975 12325 2    50   Input ~ 0
+STCLK
+Wire Wire Line
+	18500 4275 18500 4700
+$Comp
+L Transistor_BJT:2N3904 Q6
+U 1 1 5C0A2F18
+P 16450 4275
+F 0 "Q6" H 16641 4321 50  0000 L CNN
+F 1 "2N3904" H 16641 4230 50  0000 L CNN
+F 2 "land pattern:SOT23" H 16650 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 16450 4275 50  0001 L CNN
+	1    16450 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21600 4550 21075 4550
+Wire Wire Line
+	21075 4550 21075 4475
+Wire Wire Line
+	21075 4550 20350 4550
+Wire Wire Line
+	20350 4550 20350 4475
+Connection ~ 21075 4550
+Wire Wire Line
+	20350 4550 19625 4550
+Wire Wire Line
+	19625 4550 19625 4475
+Connection ~ 20350 4550
+Wire Wire Line
+	19625 4550 18825 4550
+Wire Wire Line
+	18825 4550 18825 4475
+Connection ~ 19625 4550
+Wire Wire Line
+	18825 4550 18075 4550
+Wire Wire Line
+	18075 4550 18075 4475
+Connection ~ 18825 4550
+Wire Wire Line
+	18075 4550 17350 4550
+Wire Wire Line
+	17350 4550 17350 4475
+Connection ~ 18075 4550
+Wire Wire Line
+	17350 4550 16550 4550
+Wire Wire Line
+	16550 4550 16550 4475
+Connection ~ 17350 4550
+Wire Wire Line
+	15750 4475 15750 4550
+Wire Wire Line
+	15750 4550 16550 4550
+Connection ~ 16550 4550
+Wire Wire Line
+	15750 4550 15000 4550
+Wire Wire Line
+	14275 4550 14275 4475
+Connection ~ 15750 4550
+Wire Wire Line
+	15000 4475 15000 4550
+Connection ~ 15000 4550
+Wire Wire Line
+	15000 4550 14275 4550
+Wire Wire Line
+	14275 4550 13550 4550
+Wire Wire Line
+	13550 4550 13550 4475
+Connection ~ 14275 4550
+Wire Wire Line
+	13550 4550 12750 4550
+Wire Wire Line
+	12750 4550 12750 4475
+Connection ~ 13550 4550
+Wire Wire Line
+	12400 4275 12450 4275
+Wire Wire Line
+	13200 4275 13250 4275
+Wire Wire Line
+	13950 4275 13975 4275
+Wire Wire Line
+	20775 4275 20750 4275
+Wire Wire Line
+	20050 4275 20025 4275
+Wire Wire Line
+	19325 4275 19300 4275
+Wire Wire Line
+	17775 4275 17750 4275
+Wire Wire Line
+	16975 4275 17050 4275
+Wire Wire Line
+	15450 4275 15425 4275
+Wire Wire Line
+	16250 4275 16225 4275
+Wire Wire Line
+	14700 4275 14675 4275
+$Comp
+L Device:R R16
+U 1 1 5C0A2F4D
+P 13025 12425
+F 0 "R16" H 12955 12379 50  0000 R CNN
+F 1 "39" H 12955 12470 50  0000 R CNN
+F 2 "land pattern:R_SMD_1206" V 12955 12425 50  0001 C CNN
+F 3 "~" H 13025 12425 50  0001 C CNN
+	1    13025 12425
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mylibrary:LM358 U17
+U 1 1 5C0A2F54
+P 13725 12225
+F 0 "U17" H 13875 12475 50  0000 L CNN
+F 1 "LM358" H 13875 12375 50  0000 L CNN
+F 2 "land pattern:SOIC-8" H 13725 12225 50  0001 C CNN
+F 3 "" H 13725 12225 50  0001 C CNN
+	1    13725 12225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5C0A2F5B
+P 13025 12895
+F 0 "#PWR0115" H 13025 12645 50  0001 C CNN
+F 1 "GND" H 13030 12722 50  0000 C CNN
+F 2 "" H 13025 12895 50  0001 C CNN
+F 3 "" H 13025 12895 50  0001 C CNN
+	1    13025 12895
+	1    0    0    -1  
+$EndComp
+Text GLabel 13725 11575 1    50   Input ~ 0
++5V
+$Comp
+L power:GND #PWR0116
+U 1 1 5C0A2F62
+P 13725 12675
+F 0 "#PWR0116" H 13725 12425 50  0001 C CNN
+F 1 "GND" H 13730 12502 50  0000 C CNN
+F 2 "" H 13725 12675 50  0001 C CNN
+F 3 "" H 13725 12675 50  0001 C CNN
+	1    13725 12675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5C0A30B8
+P 13975 11775
+F 0 "C7" V 13723 11775 50  0000 C CNN
+F 1 "0.1u" V 13814 11775 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" H 14013 11625 50  0001 C CNN
+F 3 "~" H 13975 11775 50  0001 C CNN
+	1    13975 11775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19610 10760 19610 10835
+$Comp
+L Mylibrary:CP CP2
+U 1 1 5C0A30C0
+P 19610 10610
+F 0 "CP2" H 19728 10656 50  0000 L CNN
+F 1 "10u" H 19728 10565 50  0000 L CNN
+F 2 "land pattern:Cap_D5.7mm_Pitch2.54mm" H 19610 10610 50  0001 C CNN
+F 3 "" H 19610 10610 50  0001 C CNN
+	1    19610 10610
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19610 10310 19610 10460
+Text GLabel 16075 9145 2    50   Input ~ 0
+ADC1
+Wire Wire Line
+	4775 12325 4975 12325
+Wire Wire Line
+	4975 12425 4775 12425
+Wire Wire Line
+	4775 12525 4975 12525
+Wire Wire Line
+	14050 8520 14150 8520
+$Comp
+L Device:R R13
+U 1 1 5C0A30CF
+P 7075 12475
+F 0 "R13" H 7145 12521 50  0000 L CNN
+F 1 "10K" H 7145 12430 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 7005 12475 50  0001 C CNN
+F 3 "~" H 7075 12475 50  0001 C CNN
+	1    7075 12475
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5C0A30D6
+P 7325 12975
+F 0 "C5" H 7350 12900 50  0000 L CNN
+F 1 "10u" H 7350 12825 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 7363 12825 50  0001 C CNN
+F 3 "~" H 7325 12975 50  0001 C CNN
+	1    7325 12975
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5C0A30DD
+P 7075 13375
+F 0 "#PWR0117" H 7075 13125 50  0001 C CNN
+F 1 "GND" H 7080 13202 50  0000 C CNN
+F 2 "" H 7075 13375 50  0001 C CNN
+F 3 "" H 7075 13375 50  0001 C CNN
+	1    7075 13375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 12325 7075 12225
+$Comp
+L Mylibrary:PB SW1
+U 1 1 5C0A30E4
+P 6925 12975
+F 0 "SW1" V 6971 12884 50  0000 R CNN
+F 1 "PB" V 6880 12884 50  0000 R CNN
+F 2 "land pattern:PUSH_BUTTON-4_TERMINAL" H 6845 12975 50  0001 C CNN
+F 3 "" H 6845 12975 50  0001 C CNN
+	1    6925 12975
+	0    -1   1    0   
+$EndComp
+Text GLabel 7075 12225 1    50   Input ~ 0
++5V
+Wire Wire Line
+	6875 13175 6875 13250
+Wire Wire Line
+	6875 13250 6975 13250
+Wire Wire Line
+	7325 13250 7325 13125
+Wire Wire Line
+	6975 13175 6975 13250
+Connection ~ 6975 13250
+Wire Wire Line
+	6975 13250 7075 13250
+Wire Wire Line
+	7075 13375 7075 13250
+Connection ~ 7075 13250
+Wire Wire Line
+	7075 13250 7325 13250
+Wire Wire Line
+	6875 12775 6875 12700
+Wire Wire Line
+	6875 12700 6975 12700
+Wire Wire Line
+	7325 12825 7325 12700
+Wire Wire Line
+	6975 12775 6975 12700
+Connection ~ 6975 12700
+Wire Wire Line
+	6975 12700 7075 12700
+Wire Wire Line
+	7075 12625 7075 12700
+Connection ~ 7075 12700
+Wire Wire Line
+	7075 12700 7325 12700
+Wire Wire Line
+	6875 12700 6650 12700
+Connection ~ 6875 12700
+Text GLabel 7810 12700 0    50   Input ~ 0
+SW1
+$Comp
+L Device:R R14
+U 1 1 5C0A3105
+P 8575 12475
+F 0 "R14" H 8645 12521 50  0000 L CNN
+F 1 "10K" H 8645 12430 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" V 8505 12475 50  0001 C CNN
+F 3 "~" H 8575 12475 50  0001 C CNN
+	1    8575 12475
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5C0A310C
+P 8825 12975
+F 0 "C6" H 8850 12900 50  0000 L CNN
+F 1 "10u" H 8850 12825 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 8863 12825 50  0001 C CNN
+F 3 "~" H 8825 12975 50  0001 C CNN
+	1    8825 12975
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5C0A3113
+P 8575 13375
+F 0 "#PWR0118" H 8575 13125 50  0001 C CNN
+F 1 "GND" H 8580 13202 50  0000 C CNN
+F 2 "" H 8575 13375 50  0001 C CNN
+F 3 "" H 8575 13375 50  0001 C CNN
+	1    8575 13375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8575 12325 8575 12225
+$Comp
+L Mylibrary:PB SW2
+U 1 1 5C0A311A
+P 8425 12975
+F 0 "SW2" V 8471 12884 50  0000 R CNN
+F 1 "PB" V 8380 12884 50  0000 R CNN
+F 2 "land pattern:PUSH_BUTTON-4_TERMINAL" H 8345 12975 50  0001 C CNN
+F 3 "" H 8345 12975 50  0001 C CNN
+	1    8425 12975
+	0    -1   1    0   
+$EndComp
+Text GLabel 8575 12225 1    50   Input ~ 0
++5V
+Wire Wire Line
+	8375 13175 8375 13250
+Wire Wire Line
+	8375 13250 8475 13250
+Wire Wire Line
+	8825 13250 8825 13125
+Wire Wire Line
+	8475 13175 8475 13250
+Connection ~ 8475 13250
+Wire Wire Line
+	8475 13250 8575 13250
+Wire Wire Line
+	8575 13375 8575 13250
+Connection ~ 8575 13250
+Wire Wire Line
+	8575 13250 8825 13250
+Wire Wire Line
+	8375 12775 8375 12700
+Wire Wire Line
+	8375 12700 8475 12700
+Wire Wire Line
+	8825 12825 8825 12700
+Wire Wire Line
+	8475 12775 8475 12700
+Connection ~ 8475 12700
+Wire Wire Line
+	8475 12700 8575 12700
+Wire Wire Line
+	8575 12625 8575 12700
+Connection ~ 8575 12700
+Wire Wire Line
+	8575 12700 8825 12700
+Connection ~ 8375 12700
+Text GLabel 6300 12700 0    50   Input ~ 0
+SW2
+$Comp
+L Device:Crystal Y1
+U 1 1 5C0A3137
+P 6725 10200
+F 0 "Y1" H 6725 10350 50  0000 C CNN
+F 1 "11.0592MHZ" H 6700 10450 50  0000 C CNN
+F 2 "land pattern:Crystal_Pitch5.08" H 6725 10200 50  0001 C CNN
+F 3 "~" H 6725 10200 50  0001 C CNN
+	1    6725 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5C0A313E
+P 6325 10500
+F 0 "C3" H 6440 10546 50  0000 L CNN
+F 1 "22p" H 6440 10455 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 6363 10350 50  0001 C CNN
+F 3 "~" H 6325 10500 50  0001 C CNN
+	1    6325 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5C0A3145
+P 7075 10500
+F 0 "C4" H 7190 10546 50  0000 L CNN
+F 1 "22p" H 7190 10455 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 7113 10350 50  0001 C CNN
+F 3 "~" H 7075 10500 50  0001 C CNN
+	1    7075 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 10350 6325 10200
+Wire Wire Line
+	6325 10200 6575 10200
+Wire Wire Line
+	7075 10350 7075 10200
+Wire Wire Line
+	7075 10200 6875 10200
+Wire Wire Line
+	6325 10650 6325 10700
+Wire Wire Line
+	6325 10700 6725 10700
+Wire Wire Line
+	7075 10700 7075 10650
+Wire Wire Line
+	6325 10200 6325 9950
+Connection ~ 6325 10200
+Wire Wire Line
+	7075 10200 7075 9950
+Connection ~ 7075 10200
+Wire Wire Line
+	6725 10700 6725 10750
+Connection ~ 6725 10700
+Wire Wire Line
+	6725 10700 7075 10700
+$Comp
+L power:GND #PWR0119
+U 1 1 5C0A315A
+P 6725 10750
+F 0 "#PWR0119" H 6725 10500 50  0001 C CNN
+F 1 "GND" H 6730 10577 50  0000 C CNN
+F 2 "" H 6725 10750 50  0001 C CNN
+F 3 "" H 6725 10750 50  0001 C CNN
+	1    6725 10750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7075 9950 1    50   Input ~ 0
+XTAL2
+Text GLabel 6325 9950 1    50   Input ~ 0
+XTAL1
+Text GLabel 4975 13025 2    50   Input ~ 0
+XTAL2
+Text GLabel 4975 12925 2    50   Input ~ 0
+XTAL1
+Wire Wire Line
+	4975 12925 4775 12925
+Wire Wire Line
+	4775 13025 4975 13025
+$Comp
+L Device:LED D2
+U 1 1 5C0A3166
+P 6450 14425
+F 0 "D2" H 6441 14641 50  0000 C CNN
+F 1 "LED" H 6441 14550 50  0000 C CNN
+F 2 "land pattern:LED_3.0mm" H 6450 14425 50  0001 C CNN
+F 3 "~" H 6450 14425 50  0001 C CNN
+	1    6450 14425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5C0A316D
+P 6900 14425
+F 0 "R11" V 6693 14425 50  0000 C CNN
+F 1 "220E" V 6784 14425 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 6830 14425 50  0001 C CNN
+F 3 "~" H 6900 14425 50  0001 C CNN
+	1    6900 14425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 14425 6600 14425
+Wire Wire Line
+	7050 14425 7225 14425
+Wire Wire Line
+	7225 14825 7050 14825
+$Comp
+L Device:LED D3
+U 1 1 5C0A3177
+P 6450 14825
+F 0 "D3" H 6441 15041 50  0000 C CNN
+F 1 "LED" H 6441 14950 50  0000 C CNN
+F 2 "land pattern:LED_3.0mm" H 6450 14825 50  0001 C CNN
+F 3 "~" H 6450 14825 50  0001 C CNN
+	1    6450 14825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5C0A317E
+P 6900 14825
+F 0 "R12" V 6693 14825 50  0000 C CNN
+F 1 "220E" V 6784 14825 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 6830 14825 50  0001 C CNN
+F 3 "~" H 6900 14825 50  0001 C CNN
+	1    6900 14825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 14825 6600 14825
+Wire Wire Line
+	6300 14425 6100 14425
+Wire Wire Line
+	6100 14825 6300 14825
+Wire Wire Line
+	7225 14425 7225 14625
+Text GLabel 7725 14350 1    50   Input ~ 0
++5V
+Wire Wire Line
+	7225 14625 7725 14625
+Wire Wire Line
+	7725 14625 7725 14350
+Connection ~ 7225 14625
+Wire Wire Line
+	7225 14625 7225 14825
+NoConn ~ 4775 13575
+NoConn ~ 4775 13675
+NoConn ~ 4775 13925
+NoConn ~ 4775 14625
+Wire Wire Line
+	2875 12425 2700 12425
+Connection ~ 2700 12425
+Wire Wire Line
+	2700 12425 2700 12625
+Wire Wire Line
+	2875 14425 2750 14425
+Wire Wire Line
+	2750 14425 2750 14525
+Connection ~ 2750 14525
+Wire Wire Line
+	2750 14525 2750 14625
+Wire Wire Line
+	2700 14725 2700 14525
+Wire Wire Line
+	2700 14525 2750 14525
+$Comp
+L Device:R R24
+U 1 1 5C0A31B1
+P 14675 12225
+F 0 "R24" V 14468 12225 50  0000 C CNN
+F 1 "1.5K" V 14559 12225 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 14605 12225 50  0001 C CNN
+F 3 "~" H 14675 12225 50  0001 C CNN
+	1    14675 12225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5C0A31B8
+P 15025 12525
+F 0 "C8" H 15140 12571 50  0000 L CNN
+F 1 "0.1u" H 15140 12480 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 15063 12375 50  0001 C CNN
+F 3 "~" H 15025 12525 50  0001 C CNN
+	1    15025 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5C0A31BF
+P 15025 12825
+F 0 "#PWR0120" H 15025 12575 50  0001 C CNN
+F 1 "GND" H 15030 12652 50  0000 C CNN
+F 2 "" H 15025 12825 50  0001 C CNN
+F 3 "" H 15025 12825 50  0001 C CNN
+	1    15025 12825
+	1    0    0    -1  
+$EndComp
+Text Notes 12450 10595 0    50   ~ 0
+R23 (ohm)\n\n\n430\n470\n510\n560\n620\n680\n750\n820\n910\n1000\n
+Text Notes 13000 10595 0    50   ~ 0
+Max. Measured Voltage\n\n\n855.81\n783.04\n721.68\n657.31\n593.76\n541.44\n490.97\n449.12\n404.77\n368.40
+Text Notes 13725 10270 0    50   ~ 0
+R21 and R23 in 1% Tolerance
+Wire Notes Line
+	5850 9550 7875 9550
+Wire Notes Line
+	7875 9550 7875 11075
+Wire Notes Line
+	7875 11075 5850 11075
+Wire Notes Line
+	5850 11075 5850 9550
+Text Notes 7350 10875 0    50   ~ 0
+Optional \n
+Text Notes 19095 10820 0    50   ~ 0
+Near to J3\n
+$Comp
+L Mylibrary:LM358 U17
+U 2 1 5C0A31CE
+P 15675 12325
+F 0 "U17" H 15825 12575 50  0000 L CNN
+F 1 "LM358" H 15825 12475 50  0000 L CNN
+F 2 "land pattern:SOIC-8" H 15675 12325 50  0001 C CNN
+F 3 "" H 15675 12325 50  0001 C CNN
+	2    15675 12325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13475 12325 13375 12325
+Wire Wire Line
+	13025 12125 13025 12275
+Wire Wire Line
+	13025 12125 12775 12125
+Wire Wire Line
+	12775 12125 12775 12325
+Wire Wire Line
+	12775 12325 12625 12325
+Wire Wire Line
+	16025 12325 16175 12325
+Wire Wire Line
+	14825 12225 15025 12225
+Wire Wire Line
+	15025 12375 15025 12225
+Wire Wire Line
+	15025 12825 15025 12675
+Wire Wire Line
+	15425 12425 15375 12425
+Wire Wire Line
+	15375 12425 15375 12925
+Wire Wire Line
+	15375 12925 16175 12925
+Wire Wire Line
+	16175 12925 16175 12325
+Connection ~ 16175 12325
+Wire Wire Line
+	16175 12325 16280 12325
+Wire Wire Line
+	13725 12525 13725 12675
+$Comp
+L power:GND #PWR0121
+U 1 1 5C0A31F1
+P 15675 12675
+F 0 "#PWR0121" H 15675 12425 50  0001 C CNN
+F 1 "GND" H 15680 12502 50  0000 C CNN
+F 2 "" H 15675 12675 50  0001 C CNN
+F 3 "" H 15675 12675 50  0001 C CNN
+	1    15675 12675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15675 12625 15675 12675
+Text GLabel 15675 11875 1    50   Input ~ 0
++5V
+Wire Wire Line
+	15675 11875 15675 12025
+Connection ~ 15025 12225
+Wire Wire Line
+	15025 12225 15425 12225
+Wire Wire Line
+	13725 11925 13725 11775
+Wire Wire Line
+	13825 11775 13725 11775
+Connection ~ 13725 11775
+Wire Wire Line
+	13725 11775 13725 11575
+$Comp
+L power:GND #PWR0122
+U 1 1 5C0A3200
+P 14275 11825
+F 0 "#PWR0122" H 14275 11575 50  0001 C CNN
+F 1 "GND" H 14280 11652 50  0000 C CNN
+F 2 "" H 14275 11825 50  0001 C CNN
+F 3 "" H 14275 11825 50  0001 C CNN
+	1    14275 11825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14125 11775 14275 11775
+Wire Wire Line
+	14275 11775 14275 11825
+Wire Wire Line
+	13475 12125 13025 12125
+Connection ~ 13025 12125
+Wire Notes Line
+	12375 11225 16675 11225
+Wire Notes Line
+	16675 11225 16675 13625
+Wire Notes Line
+	16675 13625 12375 13625
+Wire Notes Line
+	12375 13625 12375 11225
+Wire Notes Line
+	12375 10775 16675 10775
+Wire Notes Line
+	16675 10775 16675 8175
+Wire Notes Line
+	16675 8175 12375 8175
+Wire Notes Line
+	12375 8175 12375 10775
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5C115B0B
+P 21375 1200
+F 0 "H1" V 21329 1350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 21420 1350 50  0000 L CNN
+F 2 "land pattern:DrillHole_4MM_6MM" H 21375 1200 50  0001 C CNN
+F 3 "~" H 21375 1200 50  0001 C CNN
+	1    21375 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5C14D95A
+P 21375 1375
+F 0 "H2" V 21329 1525 50  0000 L CNN
+F 1 "MountingHole_Pad" V 21420 1525 50  0000 L CNN
+F 2 "land pattern:DrillHole_4MM_6MM" H 21375 1375 50  0001 C CNN
+F 3 "~" H 21375 1375 50  0001 C CNN
+	1    21375 1375
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5C14DAE2
+P 21375 1550
+F 0 "H3" V 21329 1700 50  0000 L CNN
+F 1 "MountingHole_Pad" V 21420 1700 50  0000 L CNN
+F 2 "land pattern:DrillHole_4MM_6MM" H 21375 1550 50  0001 C CNN
+F 3 "~" H 21375 1550 50  0001 C CNN
+	1    21375 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5C14DBB0
+P 21375 1725
+F 0 "H4" V 21329 1875 50  0000 L CNN
+F 1 "MountingHole_Pad" V 21420 1875 50  0000 L CNN
+F 2 "land pattern:DrillHole_4MM_6MM" H 21375 1725 50  0001 C CNN
+F 3 "~" H 21375 1725 50  0001 C CNN
+	1    21375 1725
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5C14DF44
+P 21150 1825
+F 0 "#PWR0123" H 21150 1575 50  0001 C CNN
+F 1 "GND" H 21155 1652 50  0000 C CNN
+F 2 "" H 21150 1825 50  0001 C CNN
+F 3 "" H 21150 1825 50  0001 C CNN
+	1    21150 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21150 1825 21150 1725
+Wire Wire Line
+	21150 1200 21275 1200
+Wire Wire Line
+	21275 1375 21150 1375
+Connection ~ 21150 1375
+Wire Wire Line
+	21150 1375 21150 1200
+Wire Wire Line
+	21275 1550 21150 1550
+Connection ~ 21150 1550
+Wire Wire Line
+	21150 1550 21150 1375
+Wire Wire Line
+	21275 1725 21150 1725
+Connection ~ 21150 1725
+Wire Wire Line
+	21150 1725 21150 1550
+$Comp
+L Device:R R20
+U 1 1 5C1594E3
+P 14000 12925
+F 0 "R20" V 13793 12925 50  0000 C CNN
+F 1 "33k" V 13884 12925 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 13930 12925 50  0001 C CNN
+F 3 "~" H 14000 12925 50  0001 C CNN
+	1    14000 12925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5C1CB26E
+P 13375 13125
+F 0 "R18" V 13168 13125 50  0000 C CNN
+F 1 "2.2k" V 13259 13125 50  0000 C CNN
+F 2 "land pattern:R_SMD_1206" V 13305 13125 50  0001 C CNN
+F 3 "~" H 13375 13125 50  0001 C CNN
+	1    13375 13125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13850 12925 13375 12925
+Wire Wire Line
+	13375 12925 13375 12325
+Wire Wire Line
+	14150 12925 14275 12925
+Wire Wire Line
+	14275 12925 14275 12225
+Wire Wire Line
+	14075 12225 14275 12225
+Connection ~ 14275 12225
+Wire Wire Line
+	14275 12225 14525 12225
+Wire Wire Line
+	13375 12975 13375 12925
+Connection ~ 13375 12925
+$Comp
+L power:GND #PWR0124
+U 1 1 5C3CACA2
+P 13375 13350
+F 0 "#PWR0124" H 13375 13100 50  0001 C CNN
+F 1 "GND" H 13380 13177 50  0000 C CNN
+F 2 "" H 13375 13350 50  0001 C CNN
+F 3 "" H 13375 13350 50  0001 C CNN
+	1    13375 13350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13375 13350 13375 13275
+Text GLabel 12625 12325 0    50   Input ~ 0
+CIN
+$Comp
+L power:GND #PWR0125
+U 1 1 5C52B0C6
+P 20650 10000
+F 0 "#PWR0125" H 20650 9750 50  0001 C CNN
+F 1 "GND" H 20655 9827 50  0000 C CNN
+F 2 "" H 20650 10000 50  0001 C CNN
+F 3 "" H 20650 10000 50  0001 C CNN
+	1    20650 10000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20650 10000 20650 9935
+Wire Wire Line
+	20460 9935 20650 9935
+Wire Wire Line
+	13025 12575 13025 12895
+Wire Wire Line
+	14625 9570 14625 9745
+$Comp
+L power:GND #PWR0126
+U 1 1 5C5D89AD
+P 20630 9450
+F 0 "#PWR0126" H 20630 9200 50  0001 C CNN
+F 1 "GND" H 20635 9277 50  0000 C CNN
+F 2 "" H 20630 9450 50  0001 C CNN
+F 3 "" H 20630 9450 50  0001 C CNN
+	1    20630 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20630 9450 20630 9410
+Wire Wire Line
+	20460 9410 20630 9410
+Text GLabel 6380 4230 0    50   Input ~ 0
+a
+Text GLabel 6380 4330 0    50   Input ~ 0
+b
+Text GLabel 6380 4430 0    50   Input ~ 0
+c
+Text GLabel 6380 4530 0    50   Input ~ 0
+d
+Text GLabel 6380 4630 0    50   Input ~ 0
+e
+Text GLabel 6380 4730 0    50   Input ~ 0
+f
+Text GLabel 6380 4830 0    50   Input ~ 0
+g
+Wire Wire Line
+	6360 2960 6440 2960
+Wire Wire Line
+	6360 3060 6440 3060
+Wire Wire Line
+	6360 3160 6440 3160
+Wire Wire Line
+	6360 3260 6440 3260
+Wire Wire Line
+	6360 3360 6440 3360
+Wire Wire Line
+	6360 3460 6440 3460
+Wire Wire Line
+	6360 3560 6440 3560
+Text GLabel 6380 4930 0    50   Input ~ 0
+dp
+Wire Wire Line
+	6360 3660 6440 3660
+Text GLabel 8710 3360 2    50   Input ~ 0
+CC1
+Wire Wire Line
+	8710 3360 8640 3360
+Text GLabel 8710 3460 2    50   Input ~ 0
+CC2
+Wire Wire Line
+	8710 3460 8640 3460
+Text GLabel 8710 3560 2    50   Input ~ 0
+CC3
+Wire Wire Line
+	8640 3560 8710 3560
+Text GLabel 8710 3660 2    50   Input ~ 0
+CC4
+Wire Wire Line
+	8710 3660 8640 3660
+Wire Wire Line
+	6380 4230 6440 4230
+Wire Wire Line
+	6440 4330 6380 4330
+Wire Wire Line
+	6440 4430 6380 4430
+Wire Wire Line
+	6380 4530 6440 4530
+Wire Wire Line
+	6380 4630 6440 4630
+Wire Wire Line
+	6380 4730 6440 4730
+Wire Wire Line
+	6380 4830 6440 4830
+Wire Wire Line
+	6380 4930 6440 4930
+Text GLabel 8750 5910 2    50   Input ~ 0
+CC5
+Text GLabel 8750 6010 2    50   Input ~ 0
+CC6
+Text GLabel 8750 6110 2    50   Input ~ 0
+CC7
+Text GLabel 8750 6210 2    50   Input ~ 0
+CC8
+Wire Wire Line
+	8640 4630 8740 4630
+Wire Wire Line
+	8640 4730 8740 4730
+Wire Wire Line
+	8640 4830 8740 4830
+Wire Wire Line
+	8640 4930 8740 4930
+Text GLabel 6390 5510 0    50   Input ~ 0
+a
+Text GLabel 6390 5610 0    50   Input ~ 0
+b
+Text GLabel 6390 5710 0    50   Input ~ 0
+c
+Text GLabel 6390 5810 0    50   Input ~ 0
+d
+Text GLabel 6390 5910 0    50   Input ~ 0
+e
+Text GLabel 6390 6010 0    50   Input ~ 0
+f
+Text GLabel 6390 6110 0    50   Input ~ 0
+g
+Text GLabel 6390 6210 0    50   Input ~ 0
+dp
+Wire Wire Line
+	6390 5510 6450 5510
+Wire Wire Line
+	6450 5610 6390 5610
+Wire Wire Line
+	6450 5710 6390 5710
+Wire Wire Line
+	6390 5810 6450 5810
+Wire Wire Line
+	6390 5910 6450 5910
+Wire Wire Line
+	6390 6010 6450 6010
+Wire Wire Line
+	6390 6110 6450 6110
+Wire Wire Line
+	6390 6210 6450 6210
+Wire Wire Line
+	8650 5910 8750 5910
+Wire Wire Line
+	8650 6010 8750 6010
+Wire Wire Line
+	8650 6110 8750 6110
+Wire Wire Line
+	8650 6210 8750 6210
+Text GLabel 8740 4630 2    50   Input ~ 0
+CC9
+Text GLabel 8740 4730 2    50   Input ~ 0
+CC10
+Text GLabel 8740 4830 2    50   Input ~ 0
+CC11
+Text GLabel 8740 4930 2    50   Input ~ 0
+CC12
+Text GLabel 6360 2960 0    50   Input ~ 0
+a
+Text GLabel 6360 3060 0    50   Input ~ 0
+b
+Text GLabel 6360 3160 0    50   Input ~ 0
+c
+Text GLabel 6360 3260 0    50   Input ~ 0
+d
+Text GLabel 6360 3360 0    50   Input ~ 0
+e
+Text GLabel 6360 3460 0    50   Input ~ 0
+f
+Text GLabel 6360 3560 0    50   Input ~ 0
+g
+Text GLabel 6360 3660 0    50   Input ~ 0
+dp
+$Comp
+L Display_Character:CC56-12CGKWA U5
+U 1 1 5CF398E7
+P 7540 3260
+F 0 "U5" H 7540 3927 50  0000 C CNN
+F 1 "CC56-12CGKWA" H 7540 3836 50  0000 C CNN
+F 2 "land pattern:7_segment_4_digit_CC_long_pad" H 7540 2660 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/CC56-12CGKWA(Ver.8A).pdf" H 7110 3290 50  0001 C CNN
+	1    7540 3260
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:CC56-12CGKWA U6
+U 1 1 5CF39B3C
+P 7540 4530
+F 0 "U6" H 7540 5197 50  0000 C CNN
+F 1 "CC56-12CGKWA" H 7540 5106 50  0000 C CNN
+F 2 "land pattern:7_segment_4_digit_CC_long_pad" H 7540 3930 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/CC56-12CGKWA(Ver.8A).pdf" H 7110 4560 50  0001 C CNN
+	1    7540 4530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:CC56-12CGKWA U7
+U 1 1 5CF3A1BC
+P 7550 5810
+F 0 "U7" H 7550 6477 50  0000 C CNN
+F 1 "CC56-12CGKWA" H 7550 6386 50  0000 C CNN
+F 2 "land pattern:7_segment_4_digit_CC_long_pad" H 7550 5210 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/CC56-12CGKWA(Ver.8A).pdf" H 7120 5840 50  0001 C CNN
+	1    7550 5810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5C17B6E3
+P 4525 11275
+F 0 "C9" H 4640 11321 50  0000 L CNN
+F 1 "10u" H 4640 11230 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 4563 11125 50  0001 C CNN
+F 3 "~" H 4525 11275 50  0001 C CNN
+	1    4525 11275
+	0    1    1    0   
+$EndComp
+NoConn ~ 4770 14430
+NoConn ~ 4775 14525
+Text GLabel 6100 14425 0    50   Input ~ 0
+LED1
+Text GLabel 6100 14825 0    50   Input ~ 0
+LED2
+Text GLabel 4975 13175 2    50   Input ~ 0
+LED1
+Text GLabel 4975 13275 2    50   Input ~ 0
+LED2
+Wire Wire Line
+	4775 13375 4975 13375
+Wire Wire Line
+	4775 13475 4975 13475
+$Comp
+L Mylibrary:ATMEGA88A-AU-MCU_Atmel_ATMEGA U4
+U 1 1 5C0A25E6
+P 3775 13425
+F 0 "U4" H 3825 14792 50  0000 C CNN
+F 1 "ATMEGA88A-AU-MCU_Atmel_ATMEGA" H 3825 14701 50  0000 C CNN
+F 2 "land pattern:TQFP-32_7x7mm_Pitch0.8mm" H 3775 13425 50  0001 C CIN
+F 3 "" H 3775 13425 50  0001 C CNN
+	1    3775 13425
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 14025 2    50   Input ~ 0
+SW1
+Wire Wire Line
+	4950 14025 4775 14025
+Text GLabel 4950 14125 2    50   Input ~ 0
+SW2
+Wire Wire Line
+	4950 14125 4775 14125
+NoConn ~ 4775 14225
+NoConn ~ 4775 14325
+$Comp
+L Device:C C10
+U 1 1 5C3AEB42
+P 16280 12590
+F 0 "C10" H 16395 12636 50  0000 L CNN
+F 1 "10u" H 16395 12545 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 16318 12440 50  0001 C CNN
+F 3 "~" H 16280 12590 50  0001 C CNN
+	1    16280 12590
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15460 9615 15460 9705
+Wire Wire Line
+	15460 9705 15750 9705
+Connection ~ 15750 9705
+Wire Wire Line
+	15750 9705 15750 9760
+Wire Wire Line
+	15460 9315 15460 9145
+Wire Wire Line
+	15350 9145 15460 9145
+Connection ~ 15460 9145
+Wire Wire Line
+	15460 9145 15750 9145
+$Comp
+L Device:R R34
+U 1 1 5C0B0ED3
+P 8000 12700
+F 0 "R34" H 8070 12746 50  0000 L CNN
+F 1 "0" H 8070 12655 50  0000 L CNN
+F 2 "land pattern:R_THT_L10.16mm_0.25W" V 7930 12700 50  0001 C CNN
+F 3 "~" H 8000 12700 50  0001 C CNN
+	1    8000 12700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7810 12700 7850 12700
+$Comp
+L Device:R R35
+U 1 1 5C0D5738
+P 6500 12700
+F 0 "R35" H 6570 12746 50  0000 L CNN
+F 1 "0" H 6570 12655 50  0000 L CNN
+F 2 "land pattern:R_THT_L10.16mm_0.25W" V 6430 12700 50  0001 C CNN
+F 3 "~" H 6500 12700 50  0001 C CNN
+	1    6500 12700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6300 12700 6350 12700
+$Comp
+L Device:C C11
+U 1 1 5C0FAE29
+P 15460 9465
+F 0 "C11" H 15575 9511 50  0000 L CNN
+F 1 "10u" H 15575 9420 50  0000 L CNN
+F 2 "land pattern:R_SMD_1206" H 15498 9315 50  0001 C CNN
+F 3 "~" H 15460 9465 50  0001 C CNN
+	1    15460 9465
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	16280 12440 16280 12325
+Connection ~ 16280 12325
+Wire Wire Line
+	16280 12325 16375 12325
+$Comp
+L power:GND #PWR0127
+U 1 1 5C11F4E6
+P 16280 12805
+F 0 "#PWR0127" H 16280 12555 50  0001 C CNN
+F 1 "GND" H 16285 12632 50  0000 C CNN
+F 2 "" H 16280 12805 50  0001 C CNN
+F 3 "" H 16280 12805 50  0001 C CNN
+	1    16280 12805
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16280 12740 16280 12805
+Wire Wire Line
+	8150 12700 8375 12700
+$EndSCHEMATC
